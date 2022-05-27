@@ -14,15 +14,10 @@ function gridsize (xCells, yCells) {
         //assegno lo stile alla cella
         cell.classList.add("cell");
     
+        //inserisco le celle nel contenitore
         gameGrid.append(cell);
     }
 
-    //creo la cella da inserire in html
-    // const cell = document.createElement("div");
-    //assegno lo stile alla cella
-    // cell.classList.add("cell");
-    
-    // gameGrid.append(cell);
 }
 
 gridsize(8, 8)
