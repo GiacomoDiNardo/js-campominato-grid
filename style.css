@@ -1,0 +1,14 @@
+:root{
+    --cell-size: 50px;
+}
+
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid black;
+}
