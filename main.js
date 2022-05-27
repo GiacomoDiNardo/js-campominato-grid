@@ -18,6 +18,8 @@ function gridsize (xCells, yCells) {
         gameGrid.append(cell);
     }
 
+    //do una dimensione al container per avere una griglia quadrata
+    gameGrid.style.width = `calc(var(--cell-size) * ${xCells}`
 }
 
-gridsize(8, 8)
+gridsize(10, 10)
