@@ -13,13 +13,16 @@ function gridsize (xCells, yCells) {
         const cell = document.createElement("div");
         //assegno lo stile alla cella
         cell.classList.add("cell");
+
+        //inserisco numeri incrementali da 1 a 100
+        cell.innerText = i + 1;
     
         //inserisco le celle nel contenitore
         gameGrid.append(cell);
     }
 
     //do una dimensione al container per avere una griglia quadrata
-    gameGrid.style.width = `calc(var(--cell-size) * ${xCells}`
+    gameGrid.style.width = `calc(var(--cell-size) * ${xCells}`;
 }
 
 gridsize(10, 10)
