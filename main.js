@@ -16,6 +16,11 @@ function gridsize (xCells, yCells) {
 
         //inserisco numeri incrementali da 1 a 100
         cell.innerText = i + 1;
+
+        //aggiungo evento al click
+        cell.addEventListener ("click", function() {
+            cell.classList.add("cell-event")
+        })
     
         //inserisco le celle nel contenitore
         gameGrid.append(cell);
